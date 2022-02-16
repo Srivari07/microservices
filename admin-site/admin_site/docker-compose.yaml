@@ -12,10 +12,10 @@ services:
       - db
 
   db:
-    image: postgres:latest
+    image: postgres:14.1
     restart: always
     environment:
-      POSTGRES_USER: srivari
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: srivari
       POSTGRES_DB: admin
     ports:
